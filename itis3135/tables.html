@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles/default.css" rel="stylesheet" type="text/css">
+    <title>ITIS3135 | Zakir Shahzad | HTML Tables</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Other font links -->
+</head>
+<body>
+    <header></header>
+    <script src="scripts/siteLinks.js"></script>
+
+    <main>
+        <h2>Activity #2 - HTML Tables</h2>
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Zakir Shahzad zshahza1@uncc.edu 5</li>
+            <li>Maya Ali mayaali@techcorp.com 3</li>
+            <li>Alex Turner alex.turner@techcorp.com 7</li>
+            <li>Luna Smith luna.smith@techcorp.com 2</li>
+            <li>David Johnson djohnson@techcorp.com 8</li>
+            <li>Emma Watson ewatson@techcorp.com 6</li>
+            <li>James Bond james.bond@techcorp.com 9</li>
+        </ol>
+
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>E-mail</th>
+                    <th class="right">Years of Service</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Zakir Shahzad</td>
+                    <td>zshahza1@uncc.edu</td>
+                    <td class="right">5</td>
+                </tr>
+                <tr>
+                    <td>Maya Ali</td>
+                    <td>mayaali@techcorp.com</td>
+                    <td class="right">3</td>
+                </tr>
+                <tr>
+                    <td>Alex Turner</td>
+                    <td>alex.turner@techcorp.com</td>
+                    <td class="right">7</td>
+                </tr>
+                <tr>
+                    <td>Luna Smith</td>
+                    <td>luna.smith@techcorp.com</td>
+                    <td class="right">2</td>
+                </tr>
+                <tr>
+                    <td>David Johnson</td>
+                    <td>djohnson@techcorp.com</td>
+                    <td class="right">8</td>
+                </tr>
+                <tr>
+                    <td>Emma Watson</td>
+                    <td>ewatson@techcorp.com</td>
+                    <td class="right">6</td>
+                </tr>
+                <tr>
+                    <td>James Bond</td>
+                    <td>james.bond@techcorp.com</td>
+                    <td class="right">9</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table>
+                <thead>
+                    <tr>
+                        <th id="department">Department</th>
+                        <th id="name">Name</th>
+                        <th id="email">E-mail</th>
+                        <th id="years" class="right">Years of Service</th>
+                        <th id="salary" class="right">Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="department" rowspan="2">Management</td>
+                        <td headers="name">Zakir Shahzad</td>
+                        <td headers="email">zshahza1@uncc.edu</td>
+                        <td headers="years" class="right">5</td>
+                        <td headers="salary">$120,000</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">Maya Ali</td>
+                        <td headers="email">mayaali@techcorp.com</td>
+                        <td headers="years" class="right">3</td>
+                        <td headers="salary">$90,000</td>
+                    </tr>
+                    <tr>
+                        <td headers="department" rowspan="2">Marketing</td>
+                        <td headers="name">Alex Turner</td>
+                        <td headers="email">alex.turner@techcorp.com</td>
+                        <td headers="years" class="right">7</td>
+                        <td headers="salary">$85,000</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">Luna Smith</td>
+                        <td headers="email">luna.smith@techcorp.com</td>
+                        <td headers="years" class="right">2</td>
+                        <td headers="salary">$75,000</td>
+                    </tr>
+                    <tr>
+                        <td headers="department" rowspan="2">Sales</td>
+                        <td headers="name">David Johnson</td>
+                        <td headers="email">djohnson@techcorp.com</td>
+                        <td headers="years" class="right">8</td>
+                        <td headers="salary">$95,000</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">Emma Watson</td>
+                        <td headers="email">ewatson@techcorp.com</td>
+                        <td headers="years" class="right">6</td>
+                        <td headers="salary">$80,000</td>
+                    </tr>
+                    <tr>
+                        <td headers="department">Support</td>
+                        <td headers="name">James Bond</td>
+                        <td headers="email">james.bond@techcorp.com</td>
+                        <td headers="years" class="right">9</td>
+                        <td headers="salary">$110,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" class="right">Total Annual Salary Budget:</td>
+                        <td headers="salary" class="right">$655,000</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </figure>
+    </main>
+
+    <script src="scripts/footerLinks.js"></script>
+    <footer>
+    </footer>
+</body>
+</html>
