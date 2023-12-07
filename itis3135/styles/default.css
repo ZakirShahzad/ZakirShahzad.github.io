@@ -1,0 +1,287 @@
+
+/*
+--gunmetal: #202c39ff;
+--gunmetal-2: #283845ff;
+--sage: #b8b08dff;
+--deep-champagne: #f2d492ff;
+--atomic-tangerine: #f29559ff;
+*/
+
+/*table tr:nth-child(1) {
+    background-color: #283845ff;
+    color: #fff; }
+
+ul li:nth-child(2) {
+    background-color: #b8b08dff;
+    color: #283845ff; }
+
+ul li:nth-child(4) {
+background-color: #f29559ff;
+color: #283845ff; }
+
+ul li:nth-child(5) {
+    background-color: #b8b08dff;
+    color: #283845ff; }
+
+ul li:nth-child(6) {
+background-color: #f29559ff;
+color: #283845ff; }
+
+ul li:nth-child(7) {
+    background-color: #b8b08dff;
+    color: #283845ff; }
+
+ul li:nth-child(8) {
+background-color: #f29559ff;
+color: #283845ff; }*/
+
+
+.margin_update{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+
+header
+{
+	text-align: center;
+	color: #283845ff;
+	font-weight: bold;
+}
+
+footer
+{
+	text-align: center;
+	color: #283845ff;
+	font-weight: bold;
+    margin-top: auto;
+}
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: #283845ff;
+}
+
+a:hover {
+    color: white;
+
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4f667e;
+    background-color: #A2D6AB;
+    min-height: 100vh;
+
+}
+
+h1
+{
+    font-family: 'Dhurjati', sans-serif;
+
+
+
+}
+
+h2
+{
+    font-family: 'Source Code Pro', monospace;
+    
+
+}
+
+h3
+{
+    font-family: 'Space Mono', monospace;
+    
+
+}
+
+.button {
+    background-color: #b8b08dff;
+}
+
+.dbody
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #283845ff;
+    background-color: #f2d492ff;
+
+}
+
+.customOne {
+    font-family: 'Source Code Pro', monospace;
+    background-color: lightgrey;
+    color: #283845ff;
+    font-size: 20px;
+}
+
+/*Calculator Code:*/
+.calculator form {
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 35%;
+    background-color: #283845ff;
+    font-family: 'Source Code Pro', monospace;
+    color: #f2d492ff;
+    text-align: right;
+    
+    
+
+}
+
+
+.calculator ul li {
+    background-color: #283845ff;
+    font-family: 'Source Code Pro', monospace;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.calculator input[type=button]
+{
+    align-content: center;
+    background-color: #4f667e;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+/*.calculator label
+{
+    display: block;
+    text-align: right;
+    background-color: #4f667e;
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    align-items: right;
+}*/
+
+
+
+
+/* Redo of CSS*/
+
+/*Centered*/
+.centered {
+    text-align: center;
+    align-items: center;
+
+}
+.right {
+    text-align: right;
+    align-items: right;
+
+}
+.left {
+    text-align: left;
+    align-items: left;
+
+}
+
+.label_width {
+    width:300px;
+    display: inline-block;
+}
+
+button {
+    color: #ffffff;
+    background-color: #283845ff;
+    font-size: 16px;
+    font-family: 'Space Mono', monospace;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+form 
+{
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+table, th, tr{
+    margin: 0 auto;
+    border: 1px solid #283845ff;
+    border-radius: 10px;
+    
+  }
+
+
+/*Slide Show*/
+.mySlides,
+.mySlides1 {
+    display: none;
+}
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    left: 0;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    user-select: none;
+}
+
+.next {
+    cursor: pointer;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    font-size: 18px;
+    color: white;
+    margin-top: -22px;
+    font-weight: bold;
+}
+
+.caption_slide {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.counter_slide {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ITIS3135 | Zakir Shahzad | First Scripts</title>
+    <meta charset="UTF-8">
+    <link href="styles/default.css" rel="stylesheet" type="text/css">
+    <script src="scripts/defaultscripts.js"></script>
+    <!-- Add other font links and head elements here -->
+</head>
+<body>
+    <header></header>
+    <script src="scripts/siteLinks.js"></script>
+
+    <main>
+        <h2>First Scripts</h2>
+        <h3 id="dateTimeDisplay">Loading current date and time...</h3>
+
+        <form id="userInputForm">
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" required><br>
+
+            <label for="userMood">How are you feeling today?</label>
+            <input type="text" id="userMood" required><br>
+
+            <label for="favoriteNumber">Favorite number (0-10):</label>
+            <input type="number" id="favoriteNumber" min="0" max="10" required><br>
+
+            <input type="button" value="Submit" onclick="processUserInput()">
+        </form>
+
+        <h3 id="userGreeting"></h3>
+
+        <!-- Buttons for interactive functions -->
+        <button onclick="functionOne()">Function 1</button>
+        <button onclick="functionTwo()">Function 2</button>
+        <button onclick="functionThree()">Function 3</button>
+        <button onclick="functionFour()">Function 4</button>
+    </main>
+
+    <script src="scripts/footerLinks.js"></script>
+    <footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boxing Fanatics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav span {
+            cursor: pointer;
+            padding: 10px 15px;
+            text-decoration: underline;
+            color: white;
+        }
+        section {
+            display: none;
+            padding: 20px;
+            margin: 20px;
+        }
+        figure {
+            text-align: center;
+        }
+        figcaption {
+            margin-top: 10px;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Boxing Fanatics</h1>
+        <nav>
+            <span class="nav-link" onclick="showSection('intro')">Introduction</span> |
+            <span class="nav-link" onclick="showSection('gear')">Boxing Gear</span> |
+            <span class="nav-link" onclick="showSection('techniques')">Training Techniques</span> |
+            <span class="nav-link" onclick="showSection('famous')">Famous Boxers</span> |
+            <span class="nav-link" onclick="showSection('benefits')">Health Benefits</span>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro" class="active">
+            <h2>Introduction to Boxing</h2>
+            <figure>
+                <img src="images/boxing-intro.jpg" alt="Introduction to Boxing" width="300">
+                <figcaption>An introduction to the art of boxing</figcaption>
+            </figure>
+            <p>Boxing, often called "the sweet science," is a combat sport in which two people engage in a contest of strength, speed, reflexes, and endurance.</p>
+        </section>
+
+        <section id="gear">
+            <h2>Boxing Gear</h2>
+            <figure>
+                <img src="images/boxing-gear.jpg" alt="Boxing Gear" width="300">
+                <figcaption>Essential Boxing Gear</figcaption>
+            </figure>
+            <p>Learn about the necessary gear for boxing, including gloves, headgear, and protective equipment.</p>
+        </section>
+
+        <section id="techniques">
+            <h2>Training Techniques</h2>
+            <figure>
+                <img src="images/training-techniques.jpg" alt="Training Techniques" width="300">
+                <figcaption>Boxing Training Techniques</figcaption>
+            </figure>
+            <p>Explore various boxing training techniques that help improve strength, endurance, and skill.</p>
+        </section>
+
+        <section id="famous">
+            <h2>Famous Boxers</h2>
+            <figure>
+                <img src="images/famous-boxers.jpg" alt="Famous Boxers" width="300">
+                <figcaption>Legends of the Ring</figcaption>
+            </figure>
+            <p>Discover the legends of boxing who have left a significant mark in the history of the sport.</p>
+        </section>
+
+        <section id="benefits">
+            <h2>Health Benefits of Boxing</h2>
+            <figure>
+                <img src="images/health-benefits.jpg" alt="Health Benefits" width="300">
+                <figcaption>Health Benefits of Boxing</figcaption>
+            </figure>
+            <p>Understand how boxing can contribute to physical fitness, mental strength, and overall health.</p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
