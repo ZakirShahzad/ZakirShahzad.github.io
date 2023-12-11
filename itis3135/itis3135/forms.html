@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles/default.css" rel="stylesheet" type="text/css">
+    <title>ITIS3135 | Zakir Shahzad | Activity #3 </title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Other font links -->
+</head>
+<body>
+    <header></header>
+    <script src="scripts/siteLinks.js"></script>
+
+    <main>
+        <h2>Activity #3 - HTML Form</h2>
+        <h3>Fill out the Form to Learn More:</h3>
+        <form action="#">
+            <fieldset>
+                <label for="firstName" class="customOne">Your First Name:</label>
+                <input type="text" name="firstName" id="firstName" required><br>
+
+                <label for="lastName" class="customOne">Your Last Name:</label>
+                <input type="text" name="lastName" id="lastName" required><br>
+
+                <label for="email" class="customOne">Your Email:
+                    <input type="email" name="email" id="email" required placeholder="Enter a valid email address">
+                </label><br>
+
+                <label for="phonenumber" class="customOne">Phone number:
+                    <input type="tel" name="phoneNumber" id="phonenumber" required placeholder="(000) 000-0000">
+                </label><br>
+
+                <p>Preferred Contact Method:</p>
+                <input type="radio" id="radioforphone" name="contact" value="Phone">
+                <label for="radioforphone">Phone</label><br>
+                <input type="radio" id="radioforemail" name="contact" value="Email">
+                <label for="radioforemail">Email</label><br>
+
+                <label class="customOne">Agree to Terms and Conditions:
+                    <select name="terms">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </label><br>
+
+                <input type="submit" class="button" value="Submit">
+                <input type="reset" class="button" value="Reset">
+            </fieldset>
+        </form>
+    </main>
+
+    <script src="scripts/footerLinks.js"></script>
+    <footer>
+    </footer>
+</body>
+</html>
