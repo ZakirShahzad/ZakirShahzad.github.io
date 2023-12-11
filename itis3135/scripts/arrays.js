@@ -1,4 +1,4 @@
-employees = ["Zakir Shahzad", "Rick Astley", "Greg Heffley", "Nate Wright", "Ian Malcolm", "Alan Grant", "Nick Fury"];
+employees = ["Zakir Shahzad", "Martin Smith", "John White", "Nate Right", "Nate Wrong", "Old Macdonald", "Zak Shaw"];
 salary = [150000, 99000, 112500, 61000, 86900, 64000, 115000];
 
 function addSalary() {

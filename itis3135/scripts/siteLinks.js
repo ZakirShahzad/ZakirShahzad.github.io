@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     header.innerHTML = `
         <h1>Zakir Shahzad ITIS 3135</h1>
         <nav>
-            <a href="index.html"> Home </a>
+            <a class="zakirFixedBoi" href="index.html"> Home </a>
             |
             <a href="introduction.html">Introduction</a>
             |
@@ -38,13 +38,13 @@ document.addEventListener("DOMContentLoaded", function() {
             <br>
         </nav>
         <nav>
-            <a href="stuff/🐵%20!nt3rn3t%20Sp@c3.htm">CRAPPY Site</a> 
+            <a href="stuff/crappage.html">CRAPPY Site</a> 
             |
             <a href="accessibility/Shahzad-Activity_Accessibility.html">Accessibility</a> 
             |
             <a href="website_evaluations.html">Web Eval</a> 
             |
-            <a href="hobby.html">Hobby</a>
+            <a href="hobby/index.html">Hobby</a>
             |
             <a href="Shahzad-Activity11/Shahzad-Activity11.html">Accordion Widget</a>
             |
