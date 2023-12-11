@@ -4,154 +4,93 @@
     <meta charset="UTF-8">
     <title>Boxing Fanatics</title>
     <style>
-        /* Base styles */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #f4f4f4;
-            color: #333;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Header styles */
         header {
-            background-color: #123456;
+            background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        /* Navigation styles */
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #234567;
             padding: 10px 0;
         }
         nav span {
             cursor: pointer;
-            padding: 10px 20px;
+            padding: 10px 15px;
+            text-decoration: underline;
             color: white;
-            font-size: 1.2em;
-            transition: background-color 0.3s, color 0.3s;
         }
-        nav span:hover {
-            background-color: #345678;
-            color: #f0f0f0;
-        }
-
-        /* Section styles */
         section {
             display: none;
             padding: 20px;
-            margin: 20px 0;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            border-radius: 8px;
-            text-align: center;
-        }
-        section h2 {
-            color: #123456;
-            font-size: 2em;
-        }
-        section p {
-            text-align: justify;
+            margin: 20px;
         }
         figure {
-            margin: 20px 0;
+            text-align: center;
         }
         figcaption {
             margin-top: 10px;
-            font-style: italic;
-            color: #555;
         }
         .active {
             display: block;
-        }
-
-        /* Footer styles */
-        footer {
-            background-color: #123456;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 30px;
-        }
-        footer p {
-            margin: 0;
-            font-size: 1em;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Boxing</h1>
+        <nav>
+            <span class="nav-link" onclick="showSection('intro')">Introduction</span> |
+            <span class="nav-link" onclick="showSection('gear')">Boxing Gear</span> |
+            <span class="nav-link" onclick="showSection('techniques')">Training Techniques</span> |
+            <span class="nav-link" onclick="showSection('famous')">Famous Boxers</span> |
+            <span class="nav-link" onclick="showSection('benefits')">Health Benefits</span>
+        </nav>
     </header>
-    <nav>
-        <span class="nav-link" onclick="showSection('intro')">Introduction</span>
-        <span class="nav-link" onclick="showSection('gear')">Boxing Gear</span>
-        <span class="nav-link" onclick="showSection('techniques')">Training Techniques</span>
-        <span class="nav-link" onclick="showSection('famous')">Famous Boxers</span>
-        <span class="nav-link" onclick="showSection('benefits')">Health Benefits</span>
-    </nav>
 
-    <!-- Main content sections -->
     <main>
-        <!-- Introduction section -->
         <section id="intro" class="active">
             <h2>Introduction to Boxing</h2>
             <figure>
-                <img src="images/box-sport-men-training-163403.jpeg" alt="Introduction to Boxing">
+                <img src="images/box-sport-men-training-163403.jpeg" alt="Introduction to Boxing" width="300">
                 <figcaption>An introduction to the art of boxing</figcaption>
             </figure>
             <p>Boxing, often called "the sweet science," is a combat sport in which two people engage in a contest of strength, speed, reflexes, and endurance.</p>
         </section>
 
-        <!-- Boxing Gear section -->
         <section id="gear">
             <h2>Boxing Gear</h2>
             <figure>
-                <img src="images/GUEST_20fc2f40-1d6a-4511-984d-fa79fc18d221.jpeg" alt="Boxing Gear">
+                <img src="images/GUEST_20fc2f40-1d6a-4511-984d-fa79fc18d221.jpeg" alt="Boxing Gear" width="300">
                 <figcaption>Essential Boxing Gear</figcaption>
             </figure>
             <p>Learn about the necessary gear for boxing, including gloves, headgear, and protective equipment.</p>
         </section>
 
-        <!-- Training Techniques section -->
         <section id="techniques">
             <h2>Training Techniques</h2>
             <figure>
-                <img src="images/af4l-atlvce-05.webp" alt="Training Techniques">
+                <img src="images/af4l-atlvce-05.webp" alt="Training Techniques" width="300">
                 <figcaption>Boxing Training Techniques</figcaption>
             </figure>
             <p>Explore various boxing training techniques that help improve strength, endurance, and skill.</p>
         </section>
 
-        <!-- Famous Boxers section -->
         <section id="famous">
             <h2>Famous Boxers</h2>
             <figure>
-                <img src="images/_89882093_89882033.jpg" alt="Famous Boxers">
+                <img src="images/_89882093_89882033.jpg" alt="Famous Boxers" width="300">
                 <figcaption>Legends of the Ring</figcaption>
             </figure>
             <p>Discover the legends of boxing who have left a significant mark in the history of the sport.</p>
         </section>
 
-        <!-- Health Benefits section -->
         <section id="benefits">
             <h2>Health Benefits of Boxing</h2>
             <figure>
-                <img src="images/GettyImages-949207414-7c562e9bafcb4c6f962cb16f2c545d88.jpg" alt="Health Benefits">
+                <img src="images/GettyImages-949207414-7c562e9bafcb4c6f962cb16f2c545d88.jpg" alt="Health Benefits" width="300">
                 <figcaption>Health Benefits of Boxing</figcaption>
             </figure>
             <p>Understand how boxing can contribute to physical fitness, mental strength, and overall health.</p>
@@ -159,10 +98,9 @@
     </main>
 
     <footer>
-        <p>© 2023 Shahzad Enterprise </p>
+        
     </footer>
 
-    <!-- JavaScript for navigation -->
     <script>
         function showSection(sectionId) {
             var sections = document.querySelectorAll('main section');

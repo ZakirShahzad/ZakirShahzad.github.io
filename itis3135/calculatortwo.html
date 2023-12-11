@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8e8e8;
+}
+
+
+
+#calculator {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+
+#calculator input {
+    width: 95%;
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 1em;
+}
+
+#calculator button {
+    width: 22%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #08d80f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#calculator button:hover {
+    background-color: #26c000;
+}
+
+
+</style>
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+</header>
+
+
+
+
+<main>
+    <h2>Simple Calculator</h2>
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <button id="btn1">1</button>
+        <button id="btn2">2</button>
+        <button id="btn3">3</button>
+        <button id="btnPlus">+</button>
+        <button id="btn4">4</button>
+        <button id="btn5">5</button>
+        <button id="btn6">6</button>
+        <button id="btnMinus">-</button>
+        <button id="btn7">7</button>
+        <button id="btn8">8</button>
+        <button id="btn9">9</button>
+        <button id="btnMultiply">*</button>
+        <button id="btnClear">C</button>
+        <button id="btn0">0</button>
+        <button id="btnEquals">=</button>
+        <button id="btnDivide">/</button>
+    </div>
+</main>
+
+
+
+
+<footer>
+  <div data-include="components/footer.html"></div>
+</footer>
+<script src="scripts/HTMLInclude.min.js"></script>
+<script>let currentInput = '';
+  let operation = null;
+  let previousInput = '';
+  
+  function appendNumber(number) {
+      currentInput += number;
+      updateDisplay();
+  }
+  
+  function setOperation(op) {
+      if (currentInput === '') return;
+      if (previousInput !== '') {
+          calculate();
+      }
+      operation = op;
+      previousInput = currentInput;
+      currentInput = '';
+  }
+  
+  function calculate() {
+      let computation;
+      const prev = parseFloat(previousInput);
+      const current = parseFloat(currentInput);
+      if (isNaN(prev) || isNaN(current)) return;
+      switch (operation) {
+          case '+':
+              computation = prev + current;
+              break;
+          case '-':
+              computation = prev - current;
+              break;
+          case '*':
+              computation = prev * current;
+              break;
+          case '/':
+              computation = prev / current;
+              break;
+          default:
+              return;
+      }
+      currentInput = computation.toString();
+      operation = undefined;
+      previousInput = '';
+      updateDisplay();
+  }
+  
+  function clearDisplay() {
+      currentInput = '';
+      operation = undefined;
+      previousInput = '';
+      updateDisplay();
+  }
+  
+  function updateDisplay() {
+      document.getElementById('display').value = currentInput;
+  }
+  </script>
+
+</body>
+</html>
